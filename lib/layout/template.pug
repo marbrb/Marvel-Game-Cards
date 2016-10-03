@@ -1,0 +1,17 @@
+section(class="Layout")
+  section(class="Layout-antagonist")
+    each card in [1,2,3,4,5]
+      include ../card/template.pug
+  section(class="Layout-main")
+    div(class="Layout-status")
+      each name in ["El Miguelo", "El Sotcio"]
+        include ../status/template.pug
+
+    div(class="Layout-battle")
+      include ../battle/template.pug
+    div(class="Layout-phases")
+      - text = "Le haz dado un putazo a tu rival!"
+      include ../phases/template.pug
+  section(class="Layout-player")
+    each card in [1,2,3,4,5]
+      include ../card/template.pug
